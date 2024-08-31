@@ -34,11 +34,11 @@ const Register = () => {
     <div className="register">
       <div className="card">
         <div className="left">
-          <h1>Lama Social.</h1>
+          <h1>Grow Biz</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+          At Grow Biz, we empower entrepreneurs and small business owners to take their ventures to new heights.<br>
+          </br> Whether you're just starting or looking to scale, our platform provides the tools, resources, and community support you need to succeed. <br>
+          </br>Join us today to access expert insights, business strategies, and a network of like-minded individuals who are all driven by the same goal
           </p>
           <span>Do you have an account?</span>
           <Link to="/login">

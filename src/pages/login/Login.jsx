@@ -35,11 +35,11 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World.</h1>
+          <h1>Welcome to Grow Biz.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+          Are you an African entrepreneur looking to take your small or medium-sized enterprise (SME) to new heights?<br>
+          </br> Look no further! <br> 
+          </br>Our vibrant online community is the perfect place to unlock your business's full potential.
           </p>
           <span>Don't you have an account?</span>
           <Link to="/register">
