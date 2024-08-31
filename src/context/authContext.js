@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import axios from "axios";
 
 export const AuthContext = createContext();
 
@@ -7,14 +8,16 @@ export const AuthContextProvider = ({ children }) => {
     JSON.parse(localStorage.getItem("user")) || null
   );
 
-  const login = () => {
-    //TO DO
-    setCurrentUser({
-      id: 1,
-      name: "John Doe",
-      profilePic:
-        "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    });
+  // Make the login function async to handle promises
+  const login = async (inputs) => {
+    try {
+      const res = await axios.post("http://localhost:8800/api/auth/login", inputs, {
+        withCredentials: true,
+      });
+      setCurrentUser(res.data);
+    } catch (err) {
+      throw err; // Re-throw the error to be caught in the component
+    }
   };
 
   useEffect(() => {
